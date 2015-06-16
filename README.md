@@ -8,7 +8,7 @@ It turns out that it's still useful when debugging ESP8266 remotely
 The main problem with this tool is that it doesn't close the socket
 (or quits) when the inbound http connection is dropped, and it will
 happily accept more incoming connections, which is fine for tcp->tcp
-forwarding, but it doesn't play well with sockets.
+forwarding, but it doesn't play well with serial ports.
 Thus, you should ctrl-c the tool after disconnecting from gdb.
 
 usage:
